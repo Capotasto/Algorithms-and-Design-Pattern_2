@@ -9,7 +9,12 @@
 #ifndef FacaePattern_hpp
 #define FacaePattern_hpp
 
-#include <stdio.h>
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
 
 void mainFacaePattern();
 
