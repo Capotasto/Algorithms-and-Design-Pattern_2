@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AAC5E031CDACD5F00F62C01 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC5E021CDACD5F00F62C01 /* main.cpp */; };
+		1AAC5E0B1CDACD8A00F62C01 /* FacaePattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		1AAC5DFF1CDACD5F00F62C01 /* ADP2_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ADP2_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAC5E021CDACD5F00F62C01 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FacaePattern.cpp; sourceTree = "<group>"; };
+		1AAC5E0A1CDACD8A00F62C01 /* FacaePattern.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FacaePattern.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				1AAC5E021CDACD5F00F62C01 /* main.cpp */,
+				1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */,
+				1AAC5E0A1CDACD8A00F62C01 /* FacaePattern.hpp */,
 			);
 			path = ADP2_Project;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AAC5E031CDACD5F00F62C01 /* main.cpp in Sources */,
+				1AAC5E0B1CDACD8A00F62C01 /* FacaePattern.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
