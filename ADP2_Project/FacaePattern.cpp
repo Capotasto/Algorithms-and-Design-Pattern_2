@@ -8,59 +8,38 @@
 
 #include "FacaePattern.hpp"
 
-enum type_workers{
-    BOSS,//0
-    PIECE,//1
-    COMMISSION,//2
-    HOURLY,//3
-    QUIT//4
-};
+ConcreateFacade::ConcreateFacade(){}
 
-class Facade{
-public:
-    virtual void print() = 0;//This makes this class abstract
-};
-
-class Boss:public Facade{
-public:
-    Boss(int num){ amount = num;}
-    void print() { cout << "Boss wage is $" << amount << "/mon." << endl; }
+ConcreateFacade::ConcreateFacade(int type, int wage){
     
-private:
-    int amount;
-};
+    switch (type) {
+        case BOSS:
+            facade = new Boss(wage);
+            facade->print();
+            
+            break;
+        case PIECE:
+            facade = new PieceWorker(wage);
+            facade->print();
 
-class PieceWorker:public Facade{
-public:
-    PieceWorker(int num){count = num;}
-    void print() { cout << "Piece workers wage is "<< count * 300 << endl; }
-    
-private:
-    int count;
-};
+            break;
 
-class CommissionWorkers:public Facade{
-public:
-    CommissionWorkers(int num){sales = num;}
-    void print() { cout << "Commission workers wage is "<<  MINIMUM + sales * 0.03 <<endl; }
-    
-private:
-    int sales;
-    int const static MINIMUM = 2500;
-};
+        case COMMISSION:
+            facade = new CommissionWorkers(wage);
+            facade->print();
 
-class HourlyWorkers:public Facade{
-public:
-    HourlyWorkers(int num){hour = num;}
-    void print() {
-        int sum = (hour > 20)? MINIMUM_HOURLY*hour*1.5: MINIMUM_HOURLY*hour;
-        cout << "Hourly workers wage is " << sum << endl;
+            break;
+
+        case HOURLY:
+            facade = new HourlyWorkers(wage);
+            facade->print();
+
+            break;
+            
+        default:
+            break;
     }
-    
-private:
-    int hour;
-    int const static MINIMUM_HOURLY = 10;
-};
+}
 
 void showQuestion(){
     cout << "\nChoose the worker type below."<< endl;
@@ -75,47 +54,36 @@ void showQuestion(){
 void mainFacaePattern(){
     
     int input;
-    int wage;
+    int wage = 0;
+    ConcreateFacade *concreateFacade;
     
     do {
         showQuestion();
         cin >> input;
-        
         switch (input-1) {
-            case BOSS:{
-                
-                cout << "Enter the number for boss wage."<< endl;
-                cin >> wage;
-                Boss boss(wage);
-                boss.print();
+            case BOSS:
+                cout << "Enter the num for boss wage" << endl;
                 break;
-            }
-            case PIECE:{
-                cout << "Enter the number he made."<< endl;
-                cin >> wage;
-                PieceWorker piece(wage);
-                piece.print();
+            case PIECE:
+                cout << "Enter the num for how many piece did he make?" << endl;
                 break;
-            }
-            case COMMISSION:{
-                cout << "Enter the number of his sales."<< endl;
-                cin >> wage;
-                CommissionWorkers com(wage);
-                com.print();
+            case COMMISSION:
+                cout << "Enter the num how much did he sale?" << endl;
                 break;
-            }
-            case HOURLY:{
-                cout << "Enter the number of the hour."<< endl;
-                cin >> wage;
-                HourlyWorkers hour(wage);
-                hour.print();
-                break;
-            }
-            default:{
-                break;
-            }
-        }
 
+            case HOURLY:
+                cout << "Enter the num how long did he work?" << endl;
+                break;
+                
+            default:
+                break;
+        }
+        
+        cin >> wage;
+        concreateFacade = new ConcreateFacade(input-1, wage);
+        
     } while (input-1 != QUIT);
+    
+    delete concreateFacade;
     
 }
