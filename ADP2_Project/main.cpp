@@ -8,10 +8,12 @@
 
 #include <iostream>
 #include "FacaePattern.hpp"
+#include "Assingment3.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    mainFacaePattern();
+    //mainFacaePattern();
+    mainAssignment3();
     
     return 0;
 }

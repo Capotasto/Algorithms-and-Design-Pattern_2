@@ -24,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A9C40421CEE2D9F007D6A8D /* Observer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
+		1A9C40481CEE71F6007D6A8D /* Assingment3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assingment3.hpp; sourceTree = "<group>"; };
 		1AAC5DFF1CDACD5F00F62C01 /* ADP2_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ADP2_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAC5E021CDACD5F00F62C01 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FacaePattern.cpp; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 				1AAC5E021CDACD5F00F62C01 /* main.cpp */,
 				1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */,
 				1AAC5E0A1CDACD8A00F62C01 /* FacaePattern.hpp */,
+				1A9C40421CEE2D9F007D6A8D /* Observer.hpp */,
+				1A9C40481CEE71F6007D6A8D /* Assingment3.hpp */,
 			);
 			path = ADP2_Project;
 			sourceTree = "<group>";
@@ -245,6 +249,7 @@
 				1AAC5E081CDACD5F00F62C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
