@@ -9,11 +9,15 @@
 #include <iostream>
 #include "FacaePattern.hpp"
 #include "Assingment3.hpp"
+#include "driverGraph.hpp"
+#include "Random.hpp"
 
 int main(int argc, const char * argv[]) {
     
     //mainFacaePattern();
-    mainAssignment3();
+    //mainAssignment3();
+    //driverGraph();
+    mainRandom();
     
     return 0;
 }
