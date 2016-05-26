@@ -34,44 +34,50 @@ char getResultXor(char x, char y){
 }
 
 void mainRandom(){
-    
     const int DEGIT_RANDOM = 8;
     string binary = "11001100";
     vector<unsigned long> sizeList;
-    
-    int i = 1;
+    int i = 0;
     while (i < DEGIT_RANDOM) {
-        vector<unsigned long> decimalList;
-        unsigned long decimal = std::bitset<DEGIT_RANDOM>(binary).to_ulong();
-        deque<char> data;
-
-        while (!hasDecimalNumber(decimalList, decimal)) {
-            decimalList.push_back(decimal);
-            if (data.size()==0) {
-                deque<char> xdata(binary.begin(), binary.end());
-                data = xdata;
+        int j = 1;
+        while (j+i < DEGIT_RANDOM) {
+            vector<unsigned long> decimalList;
+            unsigned long decimal = std::bitset<DEGIT_RANDOM>(binary).to_ulong();
+            deque<char> data;
+            
+            while (!hasDecimalNumber(decimalList, decimal)) {
+                decimalList.push_back(decimal);
+                if (data.size()==0) {
+                    deque<char> xdata(binary.begin(), binary.end());
+                    data = xdata;
+                }
+                
+                char newChar = getResultXor(data[i], data[j+i]);
+                data.push_back(newChar);
+                data.pop_front();
+                
+                string binaryEx(data.begin(), data.end());
+                
+                decimal = std::bitset<DEGIT_RANDOM>(binaryEx).to_ulong();
+                
+//                for (int k = 0; k < data.size(); k++) {
+//                    cout <<  data[k];
+//                }
+//                cout << endl;
             }
+            cout << "Compare to index"<< i <<" and index" << j+i <<endl;
+            cout << "Decimal List(" << j+i <<") :";
             
-            char newChar = getResultXor(data[0], data[i]);
-            data.push_back(newChar);
-            data.pop_front();
-            
-            string binaryEx(data.begin(), data.end());
-            
-            decimal = std::bitset<DEGIT_RANDOM>(binaryEx).to_ulong();
-            
+            for (int k = 0; k < decimalList.size(); k++) {
+                cout << decimalList[k] << ", ";
+            }
+            cout << decimal << endl;
+            sizeList.push_back(decimalList.size());
+            j++;
         }
-        cout << "index0 : index" << i <<endl;
-        cout << "Decimal List(" << i <<") :";
-        for (int j = 0; j < decimalList.size(); j++) {
-            cout << decimalList[j] << ", ";
-        }
-        cout << endl;
-        sizeList.push_back(decimalList.size());
-        
         i++;
     }
-    unsigned long max = 0;
+        unsigned long max = 0;
     cout << "Size list is :";
     for (int j = 0; j < sizeList.size(); j++) {
         if (max < sizeList[j]) {
