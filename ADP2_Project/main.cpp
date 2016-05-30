@@ -11,13 +11,15 @@
 #include "Assingment3.hpp"
 #include "driverGraph.hpp"
 #include "Random.hpp"
+#include "driverZipUnZip.hpp"
 
 int main(int argc, const char * argv[]) {
     
     //mainFacaePattern();
     //mainAssignment3();
     //driverGraph();
-    mainRandom();
+    //mainRandom();
+    mainDriverZipUnZip();
     
     return 0;
 }
