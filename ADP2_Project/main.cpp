@@ -12,14 +12,16 @@
 #include "driverGraph.hpp"
 #include "Random.hpp"
 #include "driverZipUnZip.hpp"
+#include "driverMidterm.hpp"
 
 int main(int argc, const char * argv[]) {
     
     //mainFacaePattern();
     //mainAssignment3();
     //driverGraph();
-    //mainRandom();
-    mainDriverZipUnZip();
+    mainRandom();
+    //mainDriverZipUnZip();
+    //mainDriverMidterm();
     
     return 0;
 }
