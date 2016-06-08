@@ -20,6 +20,7 @@
 		1AAC5E031CDACD5F00F62C01 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC5E021CDACD5F00F62C01 /* main.cpp */; };
 		1AAC5E0B1CDACD8A00F62C01 /* FacaePattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */; };
 		1AB0A16D1D0379FF00BA8ADD /* driverMidterm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0A16B1D0379FF00BA8ADD /* driverMidterm.cpp */; };
+		1ADF40BF1D078F0B009B69F3 /* driverFinal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF40BD1D078F0B009B69F3 /* driverFinal.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,9 @@
 		1AAC5E0A1CDACD8A00F62C01 /* FacaePattern.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FacaePattern.hpp; sourceTree = "<group>"; };
 		1AB0A16B1D0379FF00BA8ADD /* driverMidterm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = driverMidterm.cpp; sourceTree = "<group>"; };
 		1AB0A16C1D0379FF00BA8ADD /* driverMidterm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = driverMidterm.hpp; sourceTree = "<group>"; };
+		1ADF40B91D078A89009B69F3 /* smartPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smartPtr.h; sourceTree = "<group>"; };
+		1ADF40BD1D078F0B009B69F3 /* driverFinal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = driverFinal.cpp; sourceTree = "<group>"; };
+		1ADF40BE1D078F0B009B69F3 /* driverFinal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = driverFinal.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				1A85B4591D0214770027047B /* PushButtonCommand.hpp */,
 				1A85B45B1D0240E00027047B /* Invoker.cpp */,
 				1A85B45C1D0240E00027047B /* Invoker.hpp */,
+				1ADF40B91D078A89009B69F3 /* smartPtr.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -132,6 +137,8 @@
 				1A565A211CF7D076000761B2 /* driverZipUnZip.hpp */,
 				1AB0A16B1D0379FF00BA8ADD /* driverMidterm.cpp */,
 				1AB0A16C1D0379FF00BA8ADD /* driverMidterm.hpp */,
+				1ADF40BD1D078F0B009B69F3 /* driverFinal.cpp */,
+				1ADF40BE1D078F0B009B69F3 /* driverFinal.hpp */,
 			);
 			path = ADP2_Project;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 				1A85B44B1D011B420027047B /* Command.cpp in Sources */,
 				1AB0A16D1D0379FF00BA8ADD /* driverMidterm.cpp in Sources */,
 				1AAC4C101CEFE89D00EA2E1E /* GraphArc.cpp in Sources */,
+				1ADF40BF1D078F0B009B69F3 /* driverFinal.cpp in Sources */,
 				1AAC5E0B1CDACD8A00F62C01 /* FacaePattern.cpp in Sources */,
 				1AAC4C0D1CEFE7D300EA2E1E /* GraphNode.cpp in Sources */,
 				1A565A281CF9200F000761B2 /* ZipTree.cpp in Sources */,
