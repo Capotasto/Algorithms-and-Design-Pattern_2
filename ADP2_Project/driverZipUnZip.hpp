@@ -15,6 +15,7 @@
 #include <vector>
 #include <map>
 #include "Tree.h"
+#include "ZipUnzipNode.hpp"
 
 void mainDriverZipUnZip();
 

@@ -34,7 +34,7 @@ char getResultXor(char x, char y){
 }
 
 void mainRandom(){
-    const int DEGIT_RANDOM = 8;
+    const int DEGIT_RANDOM = 4;
     string binary = "1101";
     vector<unsigned long> sizeList;
     int i = 0;

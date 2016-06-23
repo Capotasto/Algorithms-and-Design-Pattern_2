@@ -30,55 +30,51 @@ private:
    void inOrderHelper( TreeNode< NODETYPE > * ) const;
    void postOrderHelper( TreeNode< NODETYPE > * ) const;
 
-}; // end class Tree
+};
 
 // constructor
 template< class NODETYPE >
-Tree< NODETYPE >::Tree() 
-{ 
-   rootPtr = 0; 
-
-} // end Tree constructor
-
+Tree< NODETYPE >::Tree(){
+   rootPtr = 0;
+}
 // insert node in Tree
 template< class NODETYPE >
-void Tree< NODETYPE >::insertNode( const NODETYPE &value )
-{ 
+void Tree< NODETYPE >::insertNode( const NODETYPE &value ){
    insertNodeHelper( &rootPtr, value ); 
 
-} // end function insertNode
+}
 
 // utility function called by insertNode; receives a pointer
 // to a pointer so that the function can modify pointer's value
 template< class NODETYPE >
-void Tree< NODETYPE >::insertNodeHelper( 
-   TreeNode< NODETYPE > **ptr, const NODETYPE &value )
-{
+void Tree< NODETYPE >::insertNodeHelper(TreeNode< NODETYPE > **ptr,
+                                        const NODETYPE &value){
    // subtree is empty; create new TreeNode containing value
-   if ( *ptr == 0 )  
+    if ( *ptr == 0 ){
       *ptr = new TreeNode< NODETYPE >( value );
 
-   else  // subtree is not empty
+    }else{  // subtree is not empty
 
       // data to insert is less than data in current node
-      if ( value < ( *ptr )->data )
+        if ( value < ( *ptr )->data ){
          insertNodeHelper( &( ( *ptr )->leftPtr ), value );
 
-      else
+        }else{
 
          // data to insert is greater than data in current node
-         if ( value > ( *ptr )->data )
+          if ( value > ( *ptr )->data ){
             insertNodeHelper( &( ( *ptr )->rightPtr ), value );
 
-         else  // duplicate data value ignored
-            cout << value << " dup" << endl;
-
-} // end function insertNodeHelper
+          }else{  // duplicate data value ignored
+              cout << value << " dup" << endl;
+          }
+        }
+    }
+}
 
 // begin preorder traversal of Tree
 template< class NODETYPE > 
-void Tree< NODETYPE >::preOrderTraversal() const
-{ 
+void Tree< NODETYPE >::preOrderTraversal() const{
    preOrderHelper( rootPtr ); 
 
 } // end function preOrderTraversal
@@ -86,8 +82,7 @@ void Tree< NODETYPE >::preOrderTraversal() const
 // utility function to perform preorder traversal of Tree
 template< class NODETYPE >
 void Tree< NODETYPE >::preOrderHelper( 
-   TreeNode< NODETYPE > *ptr ) const
-{
+   TreeNode< NODETYPE > *ptr ) const{
    if ( ptr != 0 ) {
       cout << ptr->data << ' ';         // process node
       preOrderHelper( ptr->leftPtr );   // go to left subtree

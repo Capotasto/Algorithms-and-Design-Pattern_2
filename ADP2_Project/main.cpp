@@ -19,11 +19,11 @@ int main(int argc, const char * argv[]) {
     
     //mainFacaePattern();
     //mainAssignment3();
-    //driverGraph();
+    driverGraph();
     //mainRandom();
     //mainDriverZipUnZip();
     //mainDriverMidterm();
-    mainDriverFinal();
+    //mainDriverFinal();
     
     return 0;
 }

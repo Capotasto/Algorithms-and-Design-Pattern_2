@@ -13,13 +13,12 @@
 		1A85B44B1D011B420027047B /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B4491D011B420027047B /* Command.cpp */; };
 		1A85B45A1D0214770027047B /* PushButtonCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B4581D0214770027047B /* PushButtonCommand.cpp */; };
 		1A85B45D1D0240E00027047B /* Invoker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A85B45B1D0240E00027047B /* Invoker.cpp */; };
-		1AAC4C0D1CEFE7D300EA2E1E /* GraphNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC4C0B1CEFE7D300EA2E1E /* GraphNode.cpp */; };
-		1AAC4C101CEFE89D00EA2E1E /* GraphArc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC4C0E1CEFE89D00EA2E1E /* GraphArc.cpp */; };
-		1AAC4C141CEFF30F00EA2E1E /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC4C121CEFF30F00EA2E1E /* Graph.cpp */; };
 		1AAC4C171CEFF7C200EA2E1E /* driverGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC4C151CEFF7C200EA2E1E /* driverGraph.cpp */; };
 		1AAC5E031CDACD5F00F62C01 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC5E021CDACD5F00F62C01 /* main.cpp */; };
 		1AAC5E0B1CDACD8A00F62C01 /* FacaePattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC5E091CDACD8A00F62C01 /* FacaePattern.cpp */; };
 		1AB0A16D1D0379FF00BA8ADD /* driverMidterm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0A16B1D0379FF00BA8ADD /* driverMidterm.cpp */; };
+		1ADAD1A01D18B57800B901DB /* GraphClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAD19E1D18B57800B901DB /* GraphClasses.cpp */; };
+		1ADAD1A31D18BCF000B901DB /* ZipUnzipNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAD1A11D18BCF000B901DB /* ZipUnzipNode.cpp */; };
 		1ADF40BF1D078F0B009B69F3 /* driverFinal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF40BD1D078F0B009B69F3 /* driverFinal.cpp */; };
 /* End PBXBuildFile section */
 
@@ -51,12 +50,6 @@
 		1A85B45B1D0240E00027047B /* Invoker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Invoker.cpp; sourceTree = "<group>"; };
 		1A85B45C1D0240E00027047B /* Invoker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Invoker.hpp; sourceTree = "<group>"; };
 		1A9C40481CEE71F6007D6A8D /* Assingment3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Assingment3.hpp; sourceTree = "<group>"; };
-		1AAC4C0B1CEFE7D300EA2E1E /* GraphNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphNode.cpp; sourceTree = "<group>"; };
-		1AAC4C0C1CEFE7D300EA2E1E /* GraphNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphNode.hpp; sourceTree = "<group>"; };
-		1AAC4C0E1CEFE89D00EA2E1E /* GraphArc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphArc.cpp; sourceTree = "<group>"; };
-		1AAC4C0F1CEFE89D00EA2E1E /* GraphArc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphArc.hpp; sourceTree = "<group>"; };
-		1AAC4C121CEFF30F00EA2E1E /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
-		1AAC4C131CEFF30F00EA2E1E /* Graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		1AAC4C151CEFF7C200EA2E1E /* driverGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = driverGraph.cpp; sourceTree = "<group>"; };
 		1AAC4C161CEFF7C200EA2E1E /* driverGraph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = driverGraph.hpp; sourceTree = "<group>"; };
 		1AAC5DFF1CDACD5F00F62C01 /* ADP2_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ADP2_Project; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +58,10 @@
 		1AAC5E0A1CDACD8A00F62C01 /* FacaePattern.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FacaePattern.hpp; sourceTree = "<group>"; };
 		1AB0A16B1D0379FF00BA8ADD /* driverMidterm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = driverMidterm.cpp; sourceTree = "<group>"; };
 		1AB0A16C1D0379FF00BA8ADD /* driverMidterm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = driverMidterm.hpp; sourceTree = "<group>"; };
+		1ADAD19E1D18B57800B901DB /* GraphClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphClasses.cpp; sourceTree = "<group>"; };
+		1ADAD19F1D18B57800B901DB /* GraphClasses.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphClasses.hpp; sourceTree = "<group>"; };
+		1ADAD1A11D18BCF000B901DB /* ZipUnzipNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZipUnzipNode.cpp; sourceTree = "<group>"; };
+		1ADAD1A21D18BCF000B901DB /* ZipUnzipNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ZipUnzipNode.hpp; sourceTree = "<group>"; };
 		1ADF40B91D078A89009B69F3 /* smartPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smartPtr.h; sourceTree = "<group>"; };
 		1ADF40BD1D078F0B009B69F3 /* driverFinal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = driverFinal.cpp; sourceTree = "<group>"; };
 		1ADF40BE1D078F0B009B69F3 /* driverFinal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = driverFinal.hpp; sourceTree = "<group>"; };
@@ -84,12 +81,6 @@
 		1AAC4C111CEFE8AB00EA2E1E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1AAC4C0B1CEFE7D300EA2E1E /* GraphNode.cpp */,
-				1AAC4C0C1CEFE7D300EA2E1E /* GraphNode.hpp */,
-				1AAC4C0E1CEFE89D00EA2E1E /* GraphArc.cpp */,
-				1AAC4C0F1CEFE89D00EA2E1E /* GraphArc.hpp */,
-				1AAC4C121CEFF30F00EA2E1E /* Graph.cpp */,
-				1AAC4C131CEFF30F00EA2E1E /* Graph.hpp */,
 				1A565A171CF5201E000761B2 /* Random.cpp */,
 				1A565A181CF5201E000761B2 /* Random.hpp */,
 				1A565A261CF9200F000761B2 /* ZipTree.cpp */,
@@ -103,6 +94,10 @@
 				1A85B45B1D0240E00027047B /* Invoker.cpp */,
 				1A85B45C1D0240E00027047B /* Invoker.hpp */,
 				1ADF40B91D078A89009B69F3 /* smartPtr.h */,
+				1ADAD19E1D18B57800B901DB /* GraphClasses.cpp */,
+				1ADAD19F1D18B57800B901DB /* GraphClasses.hpp */,
+				1ADAD1A11D18BCF000B901DB /* ZipUnzipNode.cpp */,
+				1ADAD1A21D18BCF000B901DB /* ZipUnzipNode.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -199,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADAD1A31D18BCF000B901DB /* ZipUnzipNode.cpp in Sources */,
+				1ADAD1A01D18B57800B901DB /* GraphClasses.cpp in Sources */,
 				1A85B45D1D0240E00027047B /* Invoker.cpp in Sources */,
 				1A565A221CF7D076000761B2 /* driverZipUnZip.cpp in Sources */,
 				1A85B45A1D0214770027047B /* PushButtonCommand.cpp in Sources */,
@@ -206,12 +203,9 @@
 				1AAC5E031CDACD5F00F62C01 /* main.cpp in Sources */,
 				1A85B44B1D011B420027047B /* Command.cpp in Sources */,
 				1AB0A16D1D0379FF00BA8ADD /* driverMidterm.cpp in Sources */,
-				1AAC4C101CEFE89D00EA2E1E /* GraphArc.cpp in Sources */,
 				1ADF40BF1D078F0B009B69F3 /* driverFinal.cpp in Sources */,
 				1AAC5E0B1CDACD8A00F62C01 /* FacaePattern.cpp in Sources */,
-				1AAC4C0D1CEFE7D300EA2E1E /* GraphNode.cpp in Sources */,
 				1A565A281CF9200F000761B2 /* ZipTree.cpp in Sources */,
-				1AAC4C141CEFF30F00EA2E1E /* Graph.cpp in Sources */,
 				1A565A191CF5201E000761B2 /* Random.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
